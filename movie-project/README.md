@@ -1,6 +1,8 @@
 # Movie Project
 
-En moderne React-applikasjon for å utforske, søke etter og lagre favorittfilmer. Prosjektet er bygget med Vite for rask utvikling og enkel oppsett.
+En React-applikasjon for å utforske, søke etter og lagre favorittfilmer. Prosjektet er bygget med Vite for rask utvikling og enkel oppsett.
+
+Laget for å lære om komponenter og kommunikasjon mellom disse, Routing mellom sider/komponenter, Hooks(useState, useEffect, useContext) og lagring av data i nettleser.
 
 ## Hva gjør dette programmet?
 
@@ -34,6 +36,11 @@ Dette prosjektet er et godt utgangspunkt for:
    ```sh
    npm run dev
    ```
+4. **Skaff API nøkkel:**
+
+```sh
+ Registrer som bruker på https://www.themoviedb.org/, og hent API nøkkel.
+```
 
 ## Prosjektstruktur
 
