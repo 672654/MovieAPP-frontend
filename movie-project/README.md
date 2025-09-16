@@ -1,12 +1,50 @@
-# React + Vite
+# Movie Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En moderne React-applikasjon for å utforske, søke etter og lagre favorittfilmer. Prosjektet er bygget med Vite for rask utvikling og enkel oppsett.
 
-Currently, two official plugins are available:
+## Hva gjør dette programmet?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Denne applikasjonen lar brukere:
 
-## Expanding the ESLint configuration
+- Søke etter filmer via et API
+- Se detaljer om filmer
+- Legge til og fjerne filmer fra en favorittliste
+- Navigere mellom ulike sider (Hjem, Favoritter, Om)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Hvordan kan andre dra nytte av det?
+
+Dette prosjektet er et godt utgangspunkt for:
+
+- Studenter som vil lære React og moderne frontend-utvikling
+- Utviklere som ønsker et eksempel på bruk av Context API, komponentstruktur og API-integrasjon
+- Alle som vil bygge videre på en filmrelatert applikasjon
+
+## Oppsett og installasjon
+
+1. **Klon repoet:**
+   ```sh
+   git clone <repo-url>
+   cd movie-project
+   ```
+2. **Installer avhengigheter:**
+   ```sh
+   npm install
+   ```
+3. **Start utviklingsserver:**
+   ```sh
+   npm run dev
+   ```
+
+## Prosjektstruktur
+
+- `src/components/` – Gjenbrukbare React-komponenter (f.eks. MovieCard, NavBar)
+- `src/pages/` – Sider for Hjem, Favoritter og Om
+- `src/contexts/` – Context API for deling av tilstand
+- `src/services/` – API-kall og eksterne tjenester
+- `src/css/` – Egendefinerte stilark
+
+## Videre arbeid
+
+Du kan enkelt utvide prosjektet med flere funksjoner, som brukerautentisering, flere API-kilder, eller avansert filtrering og sortering.
+
+---
