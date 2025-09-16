@@ -1,0 +1,84 @@
+.home {
+  padding: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-form {
+  background-color: #33333347;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #666;
+}
+
+.search-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #e509148a;
+  color: rgba(255, 255, 255, 0.715);
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;  
+  white-space: nowrap;
+}
+
+.search-button:hover {
+  background-color: #e73740;
+}
+
+
+@media (max-width: 639px) {
+  .home {
+    padding: 1rem 0;
+  }
+
+  .search-form {
+    margin-bottom: 1rem;
+  }
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.request-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 1rem;
+}
+.request-buttons button{
+  padding: 0.75rem 1.5rem;
+  background-color: #e509148a;
+  color: rgba(255, 255, 255, 0.715);
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;  
+  
+}
+.request-buttons button:hover {
+  background-color: #e73740;
+} 

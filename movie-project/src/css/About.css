@@ -1,0 +1,35 @@
+.about{
+  text-align: center;
+  padding: 2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.356);
+  border-radius: 20px;
+  margin: 1rem auto;
+  max-width: 800px;
+}
+.about h1{
+  text-shadow: 20px 10px 20px rgba(145, 56, 56, 0.662);
+  color: brown;
+  margin-top: -10px;
+  margin-bottom: 40px;
+  font-size: 3rem;
+}
+.about p{
+  color: gray;
+}
+
+.about-footer{
+  padding: 2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.356);
+  border-radius: 20px;
+  margin: 1rem auto;
+  max-width: 800px;
+  margin-top: 400px;
+ 
+}
+
+.about-footer-text{
+  text-align: center;
+  color: gray;
+  
+}
+
