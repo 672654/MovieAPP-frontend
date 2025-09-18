@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import MovieCard from "../components/MovieCard";
 import "../css/Home.css";
 import {
@@ -80,6 +82,12 @@ function Home() {
     }
   };
 
+  // Eksempel på funksjon som mottar data fra et barn-komponent. Callback.
+  const handleDataFromChild = useCallback((data) => {
+    //alert(data);
+    toast(data);
+  }, []);
+
   return (
     <div className="home">
       <div className="request-buttons">
@@ -105,7 +113,7 @@ function Home() {
           Search
         </button>
       </form>
-
+      <ToastContainer position="top-center" theme="dark" />
       {error && <div className="error">{error}</div>}
 
       {loading ? (
@@ -113,7 +121,11 @@ function Home() {
       ) : (
         <div className="movies-grid">
           {movies.map((movie) => (
-            <MovieCard movie={movie} key={movie.id} />
+            <MovieCard
+              movie={movie}
+              key={movie.id}
+              onSendData={handleDataFromChild}
+            />
           ))}
         </div>
       )}

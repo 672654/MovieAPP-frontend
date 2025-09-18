@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useMovieContext } from "../contexts/MovieContext";
 import "../css/MovieCard.css";
 
-function MovieCard({ movie }) {
+function MovieCard({ movie, onSendData }) {
   const [showOverview, setShowOverview] = useState(false);
   const { isFavorite, addToFavorites, removeFromFavorites } = useMovieContext();
   const favorite = isFavorite(movie.id);
@@ -17,6 +17,15 @@ function MovieCard({ movie }) {
     setShowOverview((prev) => !prev);
   }
 
+  // Funksjon for å sende data til forelder-komponent
+  const handleSendData = () => {
+    if (favorite) {
+      onSendData(`Removed from favorites: ${movie.title}`);
+    } else {
+      onSendData(`Added to favorites: ${movie.title}`);
+    }
+  };
+
   return (
     <div className="movie-card">
       <div className="movie-poster">
@@ -27,7 +36,10 @@ function MovieCard({ movie }) {
         <div className="movie-overlay">
           <button
             className={`fav-btn ${favorite ? "active" : ""}`}
-            onClick={onFavouriteClick}
+            onClick={(e) => {
+              onFavouriteClick(e);
+              handleSendData();
+            }}
           >
             ♥
           </button>
